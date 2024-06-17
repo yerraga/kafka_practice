@@ -7,8 +7,13 @@ import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
 public class KafkaTopicConfiguration {
+
+
+/**
+ * Here we will create a topic with name
+ */
 @Bean
-    public NewTopic kafkaConfig(){
+public NewTopic kafkaConfig(){
 
         return TopicBuilder.name("kafka_practise").build();
     }

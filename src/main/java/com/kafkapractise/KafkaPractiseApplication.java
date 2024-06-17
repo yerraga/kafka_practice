@@ -18,7 +18,7 @@ public class KafkaPractiseApplication {
 	CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate){
 		return args-> {
 			for(int i = 1; i < 11; i++) {
-				kafkaTemplate.send("kafka_practise", "Succesfully send message from producer :)😍" + i);
+				kafkaTemplate.send("kafka_practise", "Successfully send message from producer :)😍" + i);
 				Thread.sleep(2000);
 			}
 		};
